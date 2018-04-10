@@ -16,17 +16,8 @@
             <version>1.0-SNAPSHOT</version>
             <groupId>com.unreview.com</groupId>
         </dependency>
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-        </dependency>
 
-        <!--mysql数据库支持，在这里用作支持配置文件中属性设置spring.datasource.driver-class-name=com.mysql.jdbc.Driver -->
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <version>8.0.9-rc</version>
-        </dependency>
+
 
     </dependencies>
 
