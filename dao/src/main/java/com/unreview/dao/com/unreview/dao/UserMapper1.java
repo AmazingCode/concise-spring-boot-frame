@@ -11,5 +11,5 @@ import org.springframework.stereotype.Component;
 @ComponentScan
 public interface UserMapper1 {
 
-    NewTable getNew_tableById(int id);
+    NewTable getNew_tableById(Integer id);
 }

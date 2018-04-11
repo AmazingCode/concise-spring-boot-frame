@@ -1,5 +1,5 @@
 package com.unreview.service.interfaces;
 
 public interface ITestService {
-    String get();
+    String get(Integer id);
 }
