@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.unreview.dao.com.unreview.dao.UserMapper1">
+
+
+    <resultMap id="result" type="com.unreview.model.po.NewTable">
+        <result column="id" property="id"></result>
+        <result column="new_tablecol" property="new_tablecol"></result>
+    </resultMap>
+
+    <select id="getNew_tableById" resultMap="result" parameterType="java.lang.Integer">
+        SELECT id,new_tablecol FROM testlhj.new_table where id=#{id} limit 1;
+    </select>
+
+</mapper>

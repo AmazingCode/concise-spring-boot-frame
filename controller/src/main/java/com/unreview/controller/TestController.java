@@ -1,5 +1,6 @@
 package com.unreview.controller;
 
+import com.unreview.dao.com.unreview.dao.UserMapper1;
 import com.unreview.service.interfaces.ITestService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -13,10 +14,11 @@ public class TestController {
     @Autowired
     private ITestService service;
 
-    @RequestMapping(value = "my",method = RequestMethod.GET)
-    public Integer getData()
-    {
 
+
+    @RequestMapping(value = "my",method = RequestMethod.GET)
+    public String getData()
+    {
         return service.get();
     }
 }
