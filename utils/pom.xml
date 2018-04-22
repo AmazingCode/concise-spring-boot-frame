@@ -9,22 +9,27 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>controller</artifactId>
+    <artifactId>utils</artifactId>
+
     <dependencies>
+        <!-- https://mvnrepository.com/artifact/redis.clients/jedis -->
         <dependency>
-            <artifactId>service</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <groupId>redis.clients</groupId>
+            <artifactId>jedis</artifactId>
+            <version>2.9.0</version>
+        </dependency>
+        <dependency>
+            <artifactId>model</artifactId>
             <groupId>com.unreview.com</groupId>
+            <version>1.0-SNAPSHOT</version>
         </dependency>
 
         <dependency>
-            <artifactId>utils</artifactId>
-            <version>1.0-SNAPSHOT</version>
-            <groupId>com.unreview.com</groupId>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.16.20</version>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
-
-
-
 
 </project>
