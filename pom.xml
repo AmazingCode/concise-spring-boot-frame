@@ -42,6 +42,21 @@
             <version>1.2.0</version>
         </dependency>
 
+        <!-- aop支持 -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-aop</artifactId>
+            <version>5.0.6.RELEASE</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.aspectj/aspectjrt -->
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjrt</artifactId>
+            <version>1.9.1</version>
+        </dependency>
+
+
 
         <!-- 添加 MySQL -->
         <dependency>

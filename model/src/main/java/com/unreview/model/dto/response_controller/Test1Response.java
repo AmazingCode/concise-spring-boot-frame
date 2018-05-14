@@ -1,4 +1,4 @@
-package com.unreview.model.dto.response;
+package com.unreview.model.dto.response_controller;
 
 import lombok.Data;
 

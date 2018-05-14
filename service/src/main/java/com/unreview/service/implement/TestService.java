@@ -5,6 +5,7 @@ package com.unreview.service.implement;
 //import com.unreview.dao.com.unreview.dao.UserMapper1;
 
 import com.unreview.dao.com.unreview.dao.UserMapper1;
+import com.unreview.dao.com.unreview.dao.datasourceconfig.DataSource;
 import com.unreview.model.po.NewTable;
 import com.unreview.service.interfaces.ITestService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,6 +16,7 @@ public class TestService implements ITestService {
     @Autowired
     private UserMapper1 dao;
 
+    @DataSource("master")
     public  String get(Integer id)
     {
         NewTable result=dao.getNew_tableById(id);
