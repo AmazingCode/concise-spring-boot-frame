@@ -1,4 +1,4 @@
-package com.unreview.utils;
+package com.unreview.utils.redis;
 
 import lombok.Data;
 import org.springframework.beans.factory.annotation.Value;

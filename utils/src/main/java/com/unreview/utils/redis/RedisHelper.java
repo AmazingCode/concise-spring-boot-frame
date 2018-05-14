@@ -1,26 +1,20 @@
-package com.unreview.utils;
+package com.unreview.utils.redis;
 
 import com.alibaba.fastjson.JSON;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.unreview.model.bo.enums.TimeUnit;
-import lombok.Data;
+import com.unreview.utils.SpringContextAware;
+import com.unreview.utils.time.TimeHelper;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Scope;
-import org.springframework.stereotype.Component;
 import redis.clients.jedis.Jedis;
-import redis.clients.jedis.JedisPool;
-import redis.clients.jedis.JedisPoolConfig;
 
 /**
- * RedisHelper T:value类型
+ * RedisHelper T:value类型  非托管的普通类
  */
 public class RedisHelper<T> {
 
     @Autowired
-    private static   RedisConfig redisConfig;
+    private static  RedisConfig redisConfig;
 
 
     @Autowired
@@ -30,6 +24,7 @@ public class RedisHelper<T> {
     private TimeUnit timeUnit;
     private Long timeValue;
 
+    //通过静态代码块，通过SpringAware式在非托管bean中主动使用Spring容器功能
     static {
        redisConfig= SpringContextAware.getBean(RedisConfig.class);
     }

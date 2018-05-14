@@ -4,11 +4,9 @@ package com.unreview.service.implement;
 //import com.unreview.dao.com.unreview.dao.dao1;
 //import com.unreview.dao.com.unreview.dao.UserMapper1;
 
-import com.fasterxml.jackson.core.type.TypeReference;
 import com.unreview.dao.com.unreview.dao.UserMapper1;
 import com.unreview.model.po.NewTable;
 import com.unreview.service.interfaces.ITestService;
-import com.unreview.utils.RedisHelper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

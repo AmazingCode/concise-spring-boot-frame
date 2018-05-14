@@ -1,4 +1,4 @@
-package com.unreview.utils;
+package com.unreview.utils.time;
 
 import com.unreview.model.bo.enums.TimeUnit;
 
