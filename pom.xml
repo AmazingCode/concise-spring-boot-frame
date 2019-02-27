@@ -12,6 +12,7 @@
         <module>service</module>
         <module>dao</module>
         <module>model</module>
+        <module>utils</module>
     </modules>
     <packaging>pom</packaging>
     <dependencies>
