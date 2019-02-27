@@ -15,6 +15,11 @@
             <groupId>com.unreview.com</groupId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
+        <dependency>
+            <artifactId>utils</artifactId>
+            <groupId>com.unreview.com</groupId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
 
     </dependencies>
 

@@ -1,5 +1,6 @@
 package com.unreview.controller;
 
+import com.unreview.model.dto.controller.response.Response;
 import com.unreview.service.interfaces.ITestService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -13,10 +14,9 @@ public class TestController {
     @Autowired
     private ITestService service;
 
-    @RequestMapping(value = "my",method = RequestMethod.GET)
-    public Integer getData()
-    {
-
-        return service.get();
+    @RequestMapping(value = "my", method = RequestMethod.GET)
+    public Response<Integer> getData() {
+        Integer result = service.get();
+        return result == null ? Response.Fail() : Response.Success();
     }
 }
